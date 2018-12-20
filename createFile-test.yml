@@ -1,0 +1,15 @@
+---
+- hosts: test
+  become: yes
+
+  tasks:
+
+  - name: Create file
+    file:
+      path: "/etc/devops.txt"
+      state: touch
+
+  - name: Insert a line at the end of a file
+    lineinfile:
+      path: "/etc/devops.txt"
+      line: "Martin was here 2018!"
