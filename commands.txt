@@ -1,0 +1,10 @@
+# Run playbook
+ansible-playbook roleBasic-test.yml -e 'ansible_python_interpreter=/usr/bin/python3' -K -T 60
+
+# Run command
+ansible all -m shell -a 'poweroff' -b -K -T 60 -e 'ansible_python_interpreter=/usr/bin/python3'
+
+# git
+sudo git add --all
+sudo git commit -am 'New files'
+sudo git push -f origin master
