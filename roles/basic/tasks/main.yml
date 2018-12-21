@@ -1,0 +1,10 @@
+- name: "Installing additiional software"
+  apt: 
+    pkg: 
+      - git
+      - vim 
+    state: present
+
+# Test - Does this work?
+- name: "Copy file"
+  copy: src=../files/mcTestfil.txt dest=/etc/mcTestfil.txt owner=root group=root mode=0644
