@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+
+  # Copy host file to host
+    - copy:
+        src: ./host-file
+        dest: /etc/hosts    

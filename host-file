@@ -1,0 +1,20 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+
+127.0.0.1	localhost
+
+192.168.164.200	ubunto-004
+192.168.164.201 ubunto-003
+192.168.164.202 ubunto-002
+192.168.164.203 ubunto-001
+
+255.255.255.255	broadcasthost

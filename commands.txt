@@ -4,6 +4,12 @@ ansible-playbook roleBasic-test.yml -e 'ansible_python_interpreter=/usr/bin/pyth
 # Run command
 ansible all -m shell -a 'poweroff' -b -K -T 60 -e 'ansible_python_interpreter=/usr/bin/python3'
 
+# run playbook with the following in playbook
+vars:
+    ansible_python_interpreter: "/usr/bin/env python3"
+
+ansible-playbook createFile-test.yml -K -T 60
+
 # git
 sudo git add --all
 sudo git commit -am 'New files'
