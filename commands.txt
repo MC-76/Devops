@@ -10,6 +10,12 @@ vars:
 
 ansible-playbook createFile-test.yml -K -T 60
 
+# Create SSH Key
+ssh-keygen -t rsa -C "martin@testnet.local"
+
+# Copy SSH key to host
+ssh-copy-id martin@ubunto-001
+
 # git
 sudo git add --all
 sudo git commit -am 'New files'
